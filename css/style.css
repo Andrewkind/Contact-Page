@@ -1,20 +1,4 @@
-/*
-Color Theming assistance:
-https://color.adobe.com/Glowing-Blue-color-theme-12815858
-
-
-Nav bar tips from:
-https://modern-css.com/responsive-navbar-with-css-grid.html
-
-Additional color theme style in:
-color-black.css (switch to color.css for color test (work in progress))
-
-Uses Reset style: reset.css
-Uses tooltips style: tooltip.css
-*/
-
 body {
-    /* background-color: blanchedalmond; */
     letter-spacing: 1px;
 }
 
@@ -29,7 +13,6 @@ footer {
     justify-content: space-between;
     grid-template-columns: auto auto;
     justify-items: center;
-    padding: 15px;
     font-family: 'Fire Coda', sans-serif;
     text-transform: none;
     align-items: center;
@@ -41,6 +24,7 @@ footer a, footer p {
     font-family: 'Fire Coda', sans-serif;
     text-decoration: none;
     color: black;
+    line-height: 0;
 }
 
 .div-youtube {
@@ -63,7 +47,6 @@ footer a, footer p {
     padding: 20px;
 }
 
-/* nav element is grid */
 
 nav {
     display: grid;
@@ -84,19 +67,10 @@ p {
     padding-left: 24px;
     padding-right: 24px;
     font-family: 'PT Serif', sans-serif;
-    /* background-image: url("../media/footer.png");
-    background-size: 100% 100%; */
+
 }
 
-/* Should be in its own css file contact.css */
 
-.container-contact {
-    padding-top: 100px;
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: auto;
-    justify-items: center;
-}
 
 h1 {
     font-family: 'Fire Coda', sans-serif;
@@ -189,7 +163,6 @@ hr {
     width: 52%;
     height: 12px;
     margin-bottom: 60px;
-    box-shadow: 2px 4px black;
 }
 
 form {
@@ -267,9 +240,14 @@ form>div {
 }
 
 
-/* Width 768 or larger - Desktop */
+/* Width 1068px or larger - Desktop */
 
 @media only screen and (min-width: 1068px) {
+
+body {
+    /*background-color: lightpink; */
+}
+
     h1 {
         font-size: 24px;
     }
@@ -345,47 +323,115 @@ form>div {
     form div {
         margin-bottom: 20px;
     }
-    /* .left-menu { 
-        padding-left: 0px;
-    }
-
-    .right-logo {
-        padding-right: 10px;
-    }
-    */
+    
     .right-menu {
         padding-right: 20px;
     }
 
 }
 
-/* source: https://css-tricks.com/examples/hrs/
-Gradient transparent - color - transparent */
+/* height 550 or less */
 
-/*
-hr {
-    width: 80%;
-    border: 0;
-    height: 4px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-*/
-
-/* SPECIAL CASES */
-
-/* HEIGHT IS VERY SMALL (iPHONE X landscape) */
-
-/* height 500 or less */
-
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 770px) {
     .left-menu a {
         padding-top: 16px;
     }
-}
 
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .container-contact {
+        padding-top: 20px;
+    }
+    form label {
+        font-size: 16px;
+    }
+    form input {
+        font-size: 16px;
+        width: 100%;
+        height: 16px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .left-menu {
+        display: block;
+        max-width: initial;
+    }
+    #nav-toggle:checked~.left-menu {
+        display: block;
+        grid-row: 1;
+    }
+    .right-logo {
+        max-width: 30px;
+    }
+    .left-menu a {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+        cursor: pointer;
+        padding-right: 20px;
+        /* Seperate each tab from each other*/
+    }
+    .logo {
+        letter-spacing: 11.5px;
+        font-size: 24px;
+        padding: 0;
+    }
+    form textarea {
+        font-size: 14px;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        margin-top: 5px;
+    }
+    input[type="text"] {
+        margin-bottom: 0px;
+    }
+    input[type="submit"] {
+        height: initial;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    hr {
+        width: 18%;
+        height: 4px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .alert {
+        width: 50%;
+    }
+    form {
+        width: 40%;
+    }
+    form div {
+        margin-bottom: 20px;
+    }
+    
+    .right-menu {
+        padding-right: 20px;
+    }
+
+}
 
 footer > p > a > i {
     font-size: 90px;
     padding-right: 15px;
 }
 
+.footer-icon {
+    line-height: inherit;
+}
+
+.container-contact {
+    padding-top: 50px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+  }

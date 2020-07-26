@@ -6,13 +6,6 @@ sendsubjectButton.addEventListener("click", buttonClick);
 
 function buttonClick(event) {
 
-    /*
-    var alerts = document.getElementsByClassemail('alert');
-    console.log(alerts);
-    for (var i = 0, l = alerts.length; i < l; i++) {
-        alerts[i].style.display = "block";
-    }
-*/
     // Validate Data
 
     var form = document.getElementById("form");
@@ -94,30 +87,16 @@ function buttonClick(event) {
         bodyAlert.classList.remove("hide");
     }
 
-
-
     if (!validData) {
-
-        //Notify user of subject success
-
-        // do button stuff
         event.preventDefault();
-
     }
-
-
 }
 
-
 function isEmpty(text) {
-
     return (text == "" || text == " " || text == null || text == undefined);
-
-
 }
 
 function isClean(text) {
-
     let word = text.toLowerCase();
 
     let swearWords = ["feldercarb",

@@ -8,17 +8,7 @@ source: https://stackoverflow.com/questions/45384456/using-variables-for-a-hex-c
     --white: #ffffff;
     --purple: #551a8b;
 
-    /*
-    --black: #0D0D0D;
-    --aqua: #D93030;
-    --orange: #F27405;
-    --offwhite: #D9A404;
-    --red: #BF3073;
-*/
 
-/*
-https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
-*/
 
     --black: #011627;
     --aqua: #2ec4b6;
@@ -26,7 +16,6 @@ https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
     --offwhite: #fdfffc;
     --red: #e71d36; 
     --techorange: #f60;
-   /* --red: #f60;  techawk color */
   }
 
 
@@ -37,6 +26,5 @@ nav a {
 
 hr {
     background-color: #f60;
-   /* background-image: linear-gradient(to right,var(--white),var(--techorange), var(--white)); */
 
 }

@@ -1,11 +1,3 @@
-
-var txt = "<p>innerWidth: " + window.innerWidth + "</p>";
-txt += "<p>innerHeight: " + window.innerHeight + "</p>";
-txt += "<p>outerWidth: " + window.outerWidth + "</p>";
-txt += "<p>outerHeight: " + window.outerHeight + "</p>"; 
-//alert(txt);
-
-
 // Animate Hamburger
 
 var hamburberCheckbox = document.getElementById("nav-toggle");
@@ -19,12 +11,9 @@ hamburger.addEventListener("click", hamburgerPressed);
 
 var paddingAmount = "390px"
 
-// special case  
-
-if (window.innerHeight <= 500) {
-    paddingAmount = "226px"
- //   alert("window.innerHeight: " + window.innerHeight);
-//
+if (window.innerHeight <= 550) {
+    paddingAmount = "258px"
+    //
 }
 
 function hamburgerPressed() {
