@@ -1,22 +1,25 @@
 // Animate Hamburger
 
-var hamburberCheckbox = document.getElementById("nav-toggle");
-var hamburger = document.querySelector(".hamburger");
-var navContainer = document.querySelector(".container-nav");
-var leftMenu = document.querySelector(".left-menu");
-var navTop = document.querySelector(".nav");
+const hamburberCheckbox = document.getElementById("nav-toggle");
+const hamburger = document.querySelector(".hamburger");
+const navContainer = document.querySelector(".container-nav");
+const leftMenu = document.querySelector(".left-menu");
+const navTop = document.querySelector(".nav");
 
 
-hamburger.addEventListener("click", hamburgerPressed);
+hamburger.addEventListener("click", HamburgerPressed);
 
-var paddingAmount = "390px"
 
+// Manually adjust padding to animate menu 
+let paddingAmount = "390px"
+
+// If we have little height to play with, shrink the padding amount
 if (window.innerHeight <= 550) {
     paddingAmount = "258px"
-    //
+
 }
 
-function hamburgerPressed() {
+function HamburgerPressed() {
 
     if (!hamburberCheckbox.checked) {
         navContainer.style.transition = "0.5s";

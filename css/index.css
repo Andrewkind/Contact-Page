@@ -38,7 +38,7 @@
 
 }
 
- article > p {
+ .paragraphs > p {
       margin-bottom: 100px;
       text-align: center;
   }
@@ -48,14 +48,14 @@
       color: black;
   }
 
-  article > p > a {
+  .paragraphs > p > a {
     font-weight: bold;
     line-height: 2.5;
     letter-spacing: 2.5px;
   }
 
   .last-p {
-      margin-bottom: 240px;
+      margin-bottom: 250px;
   }
 
   hr {

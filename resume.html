@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
+    <meta name="description" content="My home page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Andrew Kind">
 
     <!-- Add Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;515&family=PT+Serif&display=swap"
@@ -26,10 +27,8 @@
     <link rel="stylesheet" href="css/resume.css">
 
     <!-- Add Color Theme style sheet -->
-    <link rel="stylesheet" href="css/color-black.css">
+    <link rel="stylesheet" href="css/color.css">
 
-    <!-- Add Tooltip style sheet -->
-    <link rel="stylesheet" href="css/tooltip.css">
 
     <!-- Add resume JavaScript file -->
     <script src="js/resume.js" defer></script>
@@ -52,9 +51,9 @@
         <nav class="nav">
 
             <!-- Hamburger Shows up on mobile-->
-            <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle2" class="burger-menu">
-                <img class="hamburger" src="media/menu-cut.jpg" alt="">
+            <input type="checkbox" id="nav-toggle" title="nav-toggle">
+            <label class="burger-menu">
+                <img class="hamburger" src="media/menu-cut.jpg" alt="menu">
             </label>
 
             <!--Left Menu of Nav-->
@@ -72,7 +71,7 @@
 
             <!--Right Menu of Nav-->
             <div class="right-menu">
-                <img class="right-logo right" src="media/logo-eye.png" alt="Andrew Kind">
+                <img class="right-logo right" src="media/logo-eye.png" alt="logo">
             </div>
         </nav>
     </header>
@@ -86,11 +85,11 @@
         <!--switch to event listeners-->
         <div class="tab">
 
-            <input class="tablinks" id="defaultOpen" type="button" value="Work" onclick="openTab(event, 'Work')">
+            <input class="tablinks work-tab" id="defaultOpen" type="button" value="Work">
 
-            <input class="tablinks" type="button" value="Education" onclick="openTab(event, 'Education')">
+            <input class="tablinks education-tab" type="button" value="Education">
 
-            <input class="tablinks" type="button" value="Objective" onclick="openTab(event, 'Other')">
+            <input class="tablinks other-tab" type="button" value="Objective">
 
         </div>
 
@@ -101,15 +100,15 @@
             </h2>
 
             <p class="github-link">
-                Check out my github <a target="_blank" href="https://github.com/Andrewkind"><i
-                        class="icon-github-alt footer-icon"></i>
+                Check out my github <a target="_blank" href="https://github.com/Andrewkind"><span
+                        class="icon-github-alt icon"></span>
 
                 </a>
             </p>
 
             <article>
-                <h3>WAV Inspection LTD. <a target="_blank" href="http://www.wav.ca"><i
-                            class="icon-external-link"></i></a> </h3>
+                <h3>WAV Inspection LTD. <a target="_blank" href="http://www.wav.ca"><span
+                            class="icon-external-link icon"></span></a> </h3>
                 <time> Oct 2014-2020</time>
 
 
@@ -154,18 +153,18 @@
 
                 <ul>
                     <li>
-                        Monitored, assisted, and trained our Call Centre Representatives.
+                        Monitor, assist, and train our Call Centre Representatives.
                     </li>
                     <li>
-                        Handled customer relations and facilitated customer concerns/comments.
+                        Handle customer relations and facilitate customer concerns/comments.
 
                     </li>
                     <li>
-                        Helped troubleshoot communication systems between the call centre and individual stores in order
+                        Help troubleshoot communication systems between the call centre and individual stores in order
                         to maintain steady flow of orders in a timely manner.
                     </li>
                     <li>
-                        Held leadership role and provided a strong example for teamwork
+                        Hold leadership role and provide a strong example for teamwork.
                     </li>
                 </ul>
             </article>
@@ -209,7 +208,7 @@
                     Edmonton, Alberta
 
                 </p>
-         
+
                 <ul>
                     <li>
 
@@ -231,18 +230,18 @@
             </h2>
             <article>
                 <h3>My Goals</h3>
-             <h4>I am currently looking for new opportunities</h4>
-             
+                <h4>I am currently looking for new opportunities</h4>
+
                 <ul>
                     <li>
                         Pursue my career in software and technology.
-                        
+
                     </li>
                     <li>
                         Be a part of the community's tech hub.
                     </li>
                     <li>
-                      Learn new skills and improve old ones.
+                        Learn new skills and improve old ones.
                     </li>
                 </ul>
             </article>
@@ -257,10 +256,10 @@
         <p class="p-footer">© 2020 Andrew Kind</p>
         <p>
 
-            <a target="_blank" href="https://github.com/Andrewkind"><i class="icon-github-alt footer-icon"></i>
+            <a target="_blank" href="https://github.com/Andrewkind"><span class="icon-github-alt footer-icon"></span>
             </a>
-            <a target="_blank" href="http://linkedin.com/in/andrew-kind-3a9a998a"> <i
-                    class="icon-linkedin-sign footer-icon"></i>
+            <a target="_blank" href="http://linkedin.com/in/andrew-kind-3a9a998a"> <span
+                    class="icon-linkedin-sign footer-icon"></span>
             </a>
         </p>
     </footer>

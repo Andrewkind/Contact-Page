@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
+    <meta name="description" content="My home page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Andrew Kind">
 
     <!-- Add Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;515&family=PT+Serif&display=swap"
@@ -26,16 +27,13 @@
     <link rel="stylesheet" href="css/contact.css">
 
     <!-- Add Color Theme style sheet - swap color-black.css to  -->
-    <link rel="stylesheet" href="css/color-black.css">
-
-    <!-- Add Tooltip style sheet -->
-    <link rel="stylesheet" href="css/tooltip.css">
+    <link rel="stylesheet" href="css/color.css">
 
     <!-- Add Main JavaScript file -->
     <script src="js/contact.js" defer></script>
 
     <!-- Add Main JavaScript file -->
-    <script type="text/javascript" src="js/main.js" defer></script>
+    <script src="js/main.js" defer></script>
 
 
     <!-- Decorate Page -->
@@ -52,9 +50,9 @@
         <nav class="nav">
 
             <!-- Hamburger Shows up on mobile-->
-            <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle2" class="burger-menu">
-                <img class="hamburger" src="media/menu-cut.jpg" alt="">
+            <input type="checkbox" id="nav-toggle" title="nav-toggle">
+            <label class="burger-menu">
+                <img class="hamburger" src="media/menu-cut.jpg" alt="menu">
             </label>
 
             <!--Left Menu of Nav-->
@@ -72,7 +70,7 @@
 
             <!--Right Menu of Nav-->
             <div class="right-menu">
-                <img class="right-logo right" src="media/logo-eye.png" alt="Andrew Kind">
+                <img class="right-logo right" src="media/logo-eye.png" alt="logo">
             </div>
         </nav>
     </header>
@@ -85,7 +83,7 @@
         <hr>
 
         <h2>Send me some love
-            <i class="icon-heart"></i>
+            <span class="icon-heart icon"></span>
 
         </h2>
 
@@ -93,22 +91,24 @@
 
             <ul>
                 <li>
-                    <label class="alert alert-email hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <label class="alert alert-email hide"><span class="fa fa-exclamation-triangle icon"
+                            aria-hidden="true"></span>
                         <span class="alert-email-text"> </span>
                     </label>
 
                 </li>
 
                 <li>
-                    <label class="alert alert-subject hide"><i class="fa fa-exclamation-triangle"
-                            aria-hidden="true"></i>
+                    <label class="alert alert-subject hide"><span class="fa fa-exclamation-triangle icon"
+                            aria-hidden="true"></span>
                         <span class="alert-subject-text"> </span>
                     </label>
                 </li>
 
                 <li>
 
-                    <label class="alert alert-body hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <label class="alert alert-body hide"><span class="fa fa-exclamation-triangle icon"
+                            aria-hidden="true"></span>
                         <span class="alert-body-text"> </span>
                     </label>
 
@@ -132,8 +132,8 @@
 
             <div class="div-body">
                 <label>Message</label>
-                <textarea name="body" rows="12" cols="32" placeholder="  Write your message here"></textarea>
-
+                <textarea id="body" name="body" rows="12" cols="32" placeholder="  Write your message here"></textarea>
+                <label class="hide" for="body">Body text</label>
 
             </div>
 
@@ -148,17 +148,18 @@
 
     <!-- footer html
         source: https://www.w3schools.com/tags/tag_footer.asp -->
-        <footer>
-            <p class="p-footer">© 2020 Andrew Kind</p>
-            <p>
-    
-                <a target = "_blank"  href="https://github.com/Andrewkind"><i class="icon-github-alt footer-icon"></i>
-                </a>
-                <a target = "_blank"  href="http://linkedin.com/in/andrew-kind-3a9a998a"> <i class="icon-linkedin-sign footer-icon"></i>
-                </a>
-            </p>
-        </footer>
-    
+    <footer>
+        <p class="p-footer">© 2020 Andrew Kind</p>
+        <p>
+
+            <a target="_blank" href="https://github.com/Andrewkind"><span class="icon-github-alt footer-icon"></span>
+            </a>
+            <a target="_blank" href="http://linkedin.com/in/andrew-kind-3a9a998a"> <span
+                    class="icon-linkedin-sign footer-icon"></span>
+            </a>
+        </p>
+    </footer>
+
 </body>
 
 </html>

@@ -37,7 +37,6 @@ footer a, footer p {
 
 .container-nav {
     border-bottom: 8px solid;
-    background-color: aliceblue;
     background-image: url("../media/footer.jpg");
     background-size: 100% 100%;
 }
@@ -419,7 +418,7 @@ body {
 
 }
 
-footer > p > a > i {
+footer > p > a > .footer-icon {
     font-size: 90px;
     padding-right: 15px;
 }

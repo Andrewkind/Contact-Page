@@ -1,87 +1,73 @@
+let sendsubjectButton = document.querySelector(".send-email-button");
+sendsubjectButton.addEventListener("click", ButtonClick);
 
-console.log("astart");
-
-var sendsubjectButton = document.querySelector(".send-email-button");
-sendsubjectButton.addEventListener("click", buttonClick);
-
-function buttonClick(event) {
+function ButtonClick(event) {
 
     // Validate Data
 
-    var form = document.getElementById("form");
-    let emailAlert = document.querySelector(".alert-email");
-    let subjectAlert = document.querySelector(".alert-subject");
-    let bodyAlert = document.querySelector(".alert-body");
-    let bodyAlertText = document.querySelector(".alert-body-text");
-    let emailAlertText = document.querySelector(".alert-email-text");
-    let subjectAlertText = document.querySelector(".alert-subject-text");
+    const form = document.getElementById("form");
+    const emailAlert = document.querySelector(".alert-email");
+    const subjectAlert = document.querySelector(".alert-subject");
+    const bodyAlert = document.querySelector(".alert-body");
+    const bodyAlertText = document.querySelector(".alert-body-text");
+    const emailAlertText = document.querySelector(".alert-email-text");
+    const subjectAlertText = document.querySelector(".alert-subject-text");
 
 
     // Variable to hold our form data's validity. Sets to false if we find any errors.
     let validData = true;
 
-    console.log(form);
+    const formData = new FormData(form);
 
-    var formData = new FormData(form);
-    console.log(form);
+    const email = formData.get("email").trim();
 
-    var email = formData.get("email").trim();
-    console.log(email);
+    const subject = formData.get("subject").trim();
 
-    var subject = formData.get("subject").trim();
-    console.log(subject);
-
-    var body = formData.get("body").trim();
-    console.log(body);
+    const body = formData.get("body").trim();
 
 
     // Clear all errors
-    var alerts = document.getElementsByClassName('alert');
-    console.log(alerts);
+    let alerts = document.getElementsByClassName('alert');
     for (var i = 0, l = alerts.length; i < l; i++) {
         alerts[i].classList.add("hide");
     }
 
-
-
     // Check email Validity
-    if (isEmpty(email)) {
+    if (IsEmpty(email)) {
         // email is empty
         validData = false;
         emailAlertText.innerHTML = "Please fill in the Name box.";
         emailAlert.classList.remove("hide");
     }
 
-
-    if (!isClean(email)) {
+    if (!IsClean(email)) {
         validData = false;
         emailAlertText.innerHTML = "Vulgar language detected.";
         emailAlert.classList.remove("hide");
     }
 
-
     // Check subject Validity
-    if (isEmpty(subject)) {
+    if (IsEmpty(subject)) {
         // email is empty
         validData = false;
         subjectAlertText.innerHTML = "Please fill in the Subject box.";
         subjectAlert.classList.remove("hide");
     }
-    if (!isClean(subject)) {
+    if (!IsClean(subject)) {
         validData = false;
         subjectAlertText.innerHTML = "Vulgar language detected.";
         subjectAlert.classList.remove("hide");
     }
 
     // Check Body Validity
-    if (isEmpty(body)) {
+    if (IsEmpty(body)) {
         // email is empty
         validData = false;
         bodyAlertText.innerHTML = "Please fill in the Message box.";
 
         bodyAlert.classList.remove("hide");
     }
-    if (!isClean(body)) {
+    if (!IsClean(body)) {
         validData = false;
         bodyAlertText.innerHTML = "Vulgar language detected.";
         bodyAlert.classList.remove("hide");
@@ -92,11 +78,11 @@ function buttonClick(event) {
     }
 }
 
-function isEmpty(text) {
+function IsEmpty(text) {
     return (text == "" || text == " " || text == null || text == undefined);
 }
 
-function isClean(text) {
+function IsClean(text) {
     let word = text.toLowerCase();
 
     let swearWords = ["feldercarb",
@@ -109,11 +95,9 @@ function isClean(text) {
         //contains substring
         //source: https://stackoverflow.com/questions/1789945/how-to-check-whether-a-string-contains-a-substring-in-javascript
         if (word.includes(swearWords[i])) {
-            console.log("not clean");
             return false;
         }
     }
-    console.log("clean");
 
     return true;
 }

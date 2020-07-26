@@ -1,0 +1,30 @@
+/* Use variables in css
+source: https://stackoverflow.com/questions/45384456/using-variables-for-a-hex-color
+*/
+:root {
+    --main-color: #06c;
+    --accent-color: #006;
+    --dark-blue: #3E38F2;
+    --white: #ffffff;
+    --purple: #551a8b;
+
+
+
+    --black: #011627;
+    --aqua: #2ec4b6;
+    --orange: #ff9f1c;
+    --offwhite: #fdfffc;
+    --red: #e71d36; 
+    --techorange: #f60;
+  }
+
+
+nav a {
+    color: var(--black);
+}
+
+
+hr {
+    background-color: #f60;
+
+}
