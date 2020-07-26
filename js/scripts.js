@@ -1,28 +1,74 @@
-console.log("script start");
+// Animate Hamburger
+
+var hamburberCheckbox = document.getElementById("nav-toggle");
+var hamburger = document.querySelector(".hamburger");
+var navContainer = document.querySelector(".container-top");
+var leftMenu = document.querySelector(".left-menu");
+var navTop = document.querySelector(".nav-top");
 
 
-// WHAT IS THE PROBLEM ???
+hamburger.addEventListener("click", hamburgerPressed);
 
-//   A button work.... modify the HELLO WORLD ????
+console.log(hamburberCheckbox.checked);
 
-// 1. Create button ......
-// 2. NAME THE BUTTON ... referencing
-// 3. ADD THE EVENT LISTENER ..> ACTIONNNNNN
+var paddingAmount = "210px"
 
-//1. EARLIER WE NAMED THEM (ID, CLASS)
+function hamburgerPressed() {
 
-//2. WE ASSIGNED OUR VARIABLES
-let paragraph = document.getElementById("my-text");
-let button = document.getElementById("my-awesome-button");
+    if (!hamburberCheckbox.checked) {
+        navContainer.style.transition = "0.3s";
+        navContainer.style.paddingBottom = paddingAmount;
+        navTop.style.border = "0px";
+
+        // After one second, remove extra padding
+        setTimeout(function () {
+            hamburberCheckbox.checked = true;
+                 navContainer.style.transition = "0s";
+            navContainer.style.paddingBottom = "0px";
+            leftMenu.style.opacity = "0%";
+            navTop.style.borderBottom = "0px solid #f60"
+
+            // try here
+            setTimeout(function () {
+                leftMenu.style.transition = "0.175s";
+
+                leftMenu.style.opacity = "100%";
 
 
 
-button.addEventListener("click", buttonPressed);
+            }, 100)
 
 
-function buttonPressed() {
-    paragraph.innerHTML = "DESTROY THE WORLD!";
+        }, 300)
+
+
+
+    }
+    else {
+        // Remove border and place back after animation
+        navTop.style.border = "0px";
+
+        hamburberCheckbox.checked = false;
+        navContainer.style.transition = "0s";
+        navContainer.style.paddingBottom = paddingAmount;
+
+        // After one second, remove extra padding
+        setTimeout(function () {
+
+            navContainer.style.transition = "0.3s";
+
+            navContainer.style.paddingBottom = "0px";
+
+            setTimeout(() => {
+                navTop.style.borderBottom = "0px solid #f60";
+
+            }, 300);
+
+        }, 1)
+
+    }
+
+
+
+
 }
-
-
-

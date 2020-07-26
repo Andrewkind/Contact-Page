@@ -1,0 +1,111 @@
+/* Use variables in css
+source: https://stackoverflow.com/questions/45384456/using-variables-for-a-hex-color
+*/
+:root {
+    --main-color: #06c;
+    --accent-color: #006;
+    --dark-blue: #3E38F2;
+    --white: #ffffff;
+    --purple: #551a8b;
+
+    /*
+    --black: #0D0D0D;
+    --aqua: #D93030;
+    --orange: #F27405;
+    --offwhite: #D9A404;
+    --red: #BF3073;
+*/
+
+/*
+https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
+*/
+
+    --black: #011627;
+    --aqua: #2ec4b6;
+    --orange: #ff9f1c;
+    --offwhite: #fdfffc;
+    --red: #e71d36; 
+    --techorange: #f60;
+   /* --red: #f60;  techawk color */
+  }
+
+
+
+
+
+form {
+    color: var(--red);
+}
+
+.container {
+    background-color: var(--white);
+    border-bottom-color: black;
+}
+
+nav a {
+    color: var(--black);
+}
+
+nav label {
+    color: var(--black);
+}
+
+.tasks {
+    border-color: var(--black);
+}
+
+.button1 {
+    background-color: var(--offwhite);
+    color: var(--black);
+    border-color: var(--red);
+}
+
+.button1:hover {
+    background-color: var(--orange);
+}
+
+input[type=text] {
+    border-color: var(--red);
+}
+
+.label, h1, label {
+    color: var(--black);
+}
+
+.checkmark {
+    background-color: var(--orange);
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: var(--black);
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: var(--black);
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    border-color: var(--offwhite);
+}
+
+hr {
+    background-image: linear-gradient(to right,var(--white),var(--red), var(--white));
+
+}
+
+/* 1025 pixel screen or less do this: */
+
+@media only screen and (max-width: 1025px) {
+    body {
+        background-color: var(--white);
+    }
+
+
+
+}

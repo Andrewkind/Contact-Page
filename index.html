@@ -1,19 +1,67 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
-    <script src="js/scripts.js" defer></script>
+    <!-- Add Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
 
+        <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Add Reset Sheet -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Add Main style sheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Add Color Theme style sheet - swap color-black.css to color.css for color test  -->
+    <link rel="stylesheet" href="css/color-black.css">
+
+    <!-- Add Tooltip style sheet -->
+    <link rel="stylesheet" href="css/tooltip.css">
+
+    <!-- Add Main JavaScript file -->
+    <script type="text/javascript" src="js/scripts.js" defer></script>
+
+    <!-- Decorate Page -->
+    <title>Bark It!</title>
+    <link rel="icon" href="media/logo.png">
 
 </head>
 
-<body >
-    <p id="my-text"> Hello world!</p>
+<body>
+    <!-- Main Top Container -->
+    <div class="container container-top">
 
+        <!-- Top Nav-->
+        <nav class="nav-top">
 
-    <button id="my-awesome-button" class="my-button" type="button">Click Me!</button>
+            <!-- Hamburger Shows up on mobile-->
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle2" class="burger-menu">
+                <img class="hamburger" src="media/menu.png" alt="">
+            </label>
 
+       <!--Left Menu of Nav-->
+            <div class="left-menu menu">
+                
+                <a>R&#201;sum&#201;</a>
+                <a>Portfolio</a>
+                <a>Contact</a>
+            </div>
+
+            <!--Center Menu of Nav-->
+            <a href="index.html" class="logo">Andrew Kind
+
+            </a>
+
+            <!--Right Menu of Nav-->
+            <div class="right-menu menu">
+                <span class="tooltiptext" id="tooltip-bark">BARK!</span>
+                <img class="right-logo right" id="bear-right" src="media/logo-eye.png" alt=""> 
+            </div>
+        </nav>
+    </div>
 
 </body>
 
