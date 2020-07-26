@@ -65,6 +65,7 @@ h2 {
 @media only screen and (min-width: 1068px) {
     .container-photo {
         padding: 0px;
+        margin-bottom: 410px;
     }
     hr {
         width: 45%;
