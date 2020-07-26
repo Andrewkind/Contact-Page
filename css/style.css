@@ -21,6 +21,7 @@ Uses tooltips style: tooltip.css
 
 .container-nav {
     border-bottom: 8px solid;
+    background-color: aliceblue;
 }
 
 .nav {
@@ -45,8 +46,11 @@ a {
     font-family: 'Fire Coda', sans-serif;
 }
 
+
+/* Should be in its own css file contact.css */
 .container-contact {
     padding-top: 100px;
+    padding-bottom: 600px;
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
@@ -55,6 +59,13 @@ a {
 h1 {
     font-family: 'Fire Coda', sans-serif;
     font-size: 60px;
+    max-width: 2000px; /* stop h1 from going on multi lines */
+    display: inlineock;
+
+}
+
+.last-a {
+         padding-bottom: 30px;
 }
 
 a:hover {
@@ -78,12 +89,13 @@ a:hover {
 
 .left-menu {
     display: none;
-    max-width: 100px;
-    /* Stop overflow of text in left menu a items */
+    max-width: 100px; /* Stop overflow of text in left menu a items */
+    
     grid-column: 1;
     align-self: center;
-    padding-left: 10px;
+    padding-left: 30px;
 }
+
 
 .right-logo {
     max-width: 100px;
@@ -91,7 +103,7 @@ a:hover {
 
 .left-menu a {
     font-size: 60px;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 .logo {
@@ -110,20 +122,9 @@ a:hover {
     grid-row: 2;
 }
 
-form {
-    font-size: 50px;
-    font-family: 'Fire Coda', sans-serif;
-}
 
-form input {
-    width: 400px;
-    height: 70px;
-    padding: 12px 20px;
-    border: 1px solid;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
+
+
 
 hr {
     width: 40%;
@@ -133,18 +134,72 @@ hr {
 
 form {
     display: grid;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    width: 70%;
+    justify-items: center;
+    font-family: 'Fire Coda', sans-serif;
+
 }
+
+form label {
+    font-size: 40px;
+    font-family: 'Fire Coda', sans-serif;
+
+}
+
+form textarea {
+    font-size: 30px;
+    font-family: 'Fire Coda', sans-serif;
+    padding-bottom: 20px;
+
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 8px;
+
+
+}
+
+form input {
+    width: 100%; /* force input onto its own line */
+    height: 120px;
+    padding: 12px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.alert {
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: #fa3c52;
+    font-family: 'Fire Coda', sans-serif;
+    margin: 44px;
+    margin-top: 4px;
+    padding: 15px;
+    width: 90%;
+    text-align: center;
+
+    display: none;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 50px;
+    margin-right: 60px;
+}
+
 
 /* Width 725 or larger (up to 1025) - Tablet */
 
 @media only screen and (min-width: 725px) {
-    form {
-        font-size: 20px;
-    }
-    form input {
-        width: 200px;
-        height: 30px;
-    }
+
 }
 
 /* Width 1025 or larger - Desktop */

@@ -48,7 +48,7 @@
 
                 <a>R&#201;sum&#201;</a>
                 <a>Portfolio</a>
-                <a>Contact</a>
+                <a class="last-a">Contact</a>
             </div>
 
             <!--Center Menu of Nav-->
@@ -68,28 +68,49 @@
 
         <h1>CONTACT FORM</h1>
         <hr>
-        <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+
+        <form action="mailto:" id = "form" method="get" enctype="text/plain">
+
+
             <div>
-                <label for="name">Name:
+                <label for="name">Your Name 
                     <input type="text" name="name" id="name" />
+                    
                 </label>
             </div>
+                <label class="alert alert-name"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+
+                Please fill in the box.
+            </label>
+
             <div>
-                <label for="email">Email:
+                <label for="email">Your Email
                     <input type="text" name="email" id="email" />
                 </label>
             </div>
+         
+            <label class="alert alert-email"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                Please fill in the box.
+            </label>
             <div>
-                <label>Comments:</label>
-                <br />
-                <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+                <label>Message</label>
+                
+                <textarea name="message" rows="12" cols="35" placeholder="Write your message here"></textarea>
             </div>
+      
+            <label class="alert alert-message"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                Please fill in the box.
+            </label>
+
             <div>
-                <input type="submit" name="submit" value="Send" />
+                <input type="submit" class="send-email-button" name="submit" value="Send Email" />
+             
             </div>
+            <label class="alert alert-all"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                Please fix errors.
+            </label>
         </form>
     </div>
-
 </body>
 
 </html>

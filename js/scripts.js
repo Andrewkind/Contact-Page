@@ -11,12 +11,12 @@ hamburger.addEventListener("click", hamburgerPressed);
 
 console.log(hamburberCheckbox.checked);
 
-var paddingAmount = "270px"
+var paddingAmount = "410px"
 
 function hamburgerPressed() {
 
     if (!hamburberCheckbox.checked) {
-        navContainer.style.transition = "0.3s";
+        navContainer.style.transition = "0.5s";
         navContainer.style.paddingBottom = paddingAmount;
         navTop.style.border = "0px";
 
@@ -39,7 +39,7 @@ function hamburgerPressed() {
             }, 100)
 
 
-        }, 300)
+        }, 500)
 
 
 
@@ -55,14 +55,14 @@ function hamburgerPressed() {
         // After one second, remove extra padding
         setTimeout(function () {
 
-            navContainer.style.transition = "0.3s";
+            navContainer.style.transition = "0.5s";
 
             navContainer.style.paddingBottom = "0px";
 
             setTimeout(() => {
                 navTop.style.borderBottom = "0px solid #f60";
 
-            }, 300);
+            }, 500);
 
         }, 1)
 
@@ -73,26 +73,51 @@ function hamburgerPressed() {
 
 }
 
-//animateTitle();
 
-function animateTitle() {
+var sendEmailButton = document.querySelector(".send-email-button");
+sendEmailButton.addEventListener("click", buttonClick);
 
-    var i = 0;
+function buttonClick(event) {
+    
+    var alerts = document.getElementsByClassName('alert');
+    console.log(alerts);
+    for(var i=0, l=alerts.length; i<l; i++){
+        alerts[i].style.display = "block";
+       }
 
-    setInterval(() => {
-        if (i % 2 == 0) {
-            document.title = "o<";
+       // Validate Data
 
-        }
-        else {
-            document.title = "O<";
+       var form = document.getElementById("form")
+       console.log(form);
 
-        }
-        i++;
+       var formData = new FormData(form);
+       console.log(form);
 
-    }, 100);
+       var name = formData.get("name");
+       console.log(name);
+       
+       var email = formData.get("email");
+       console.log(email);
+
+       var message = formData.get("message");
+       console.log(message);
+
+       if (isValid(message) && isValid(email) && isValid(name)) {
+           console.log("good to go");
+
+           form.submit();
+           // Run form action via js
+
+       }
+       else {
+        event.preventDefault();
+
+       }
+}
 
 
 
+function isValid(text) {
 
+    return false;
 }
