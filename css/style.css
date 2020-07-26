@@ -50,7 +50,6 @@ footer a, footer p {
     font-weight: bold;
 }
 
-
 nav {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -70,10 +69,7 @@ p {
     padding-left: 24px;
     padding-right: 24px;
     font-family: 'PT Serif', sans-serif;
-
 }
-
-
 
 h1 {
     font-family: 'Fire Coda', sans-serif;
@@ -213,8 +209,6 @@ form input {
     box-shadow: 2px 4px black;
 }
 
-
-
 .fa {
     color: black;
 }
@@ -243,9 +237,8 @@ form>div {
     width: 50%;
 }
 
-
-
 /* Width 838 and larger - Tablet */
+
 @media only screen and (min-width: 990px) {
     h1 {
         font-size: 60px;
@@ -260,11 +253,9 @@ form>div {
     }
 }
 
-
 /* Width 1068px or larger - Desktop */
 
 @media only screen and (min-width: 1068px) {
-   
     h1 {
         font-size: 24px;
     }
@@ -340,7 +331,6 @@ form>div {
     form div {
         margin-bottom: 20px;
     }
-    
     .right-menu {
         padding-right: 20px;
     }
@@ -363,27 +353,23 @@ form>div {
     .paragraphs>p {
         margin-bottom: 20px;
     }
-
     footer {
         height: 30px;
     }
-
     footer a, footer p {
         font-size: 14px;
     }
-
-    footer > p > a > .footer-icon {
+    footer>p>a>.footer-icon {
         font-size: 16px;
     }
-
 }
 
 /* height 550 or less (Landscape) */
+
 @media only screen and (max-height: 770px) {
     .left-menu a {
         padding-top: 16px;
     }
-
     h1 {
         font-size: 24px;
     }
@@ -459,14 +445,12 @@ form>div {
     form div {
         margin-bottom: 20px;
     }
-    
     .right-menu {
         padding-right: 20px;
     }
-
 }
 
-footer > p > a > .footer-icon {
+footer>p>a>.footer-icon {
     font-size: 90px;
     padding-right: 15px;
 }
@@ -481,4 +465,4 @@ footer > p > a > .footer-icon {
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
-  }
+}

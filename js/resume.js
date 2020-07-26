@@ -1,6 +1,12 @@
 // tabs in html
 // source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
 
+
+/**
+ * Hide and open a new tab 
+ * @param {event} evt - event object
+ * @param {event} tabName - name of tab to open
+ */
 function OpenTab(evt, tabName) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

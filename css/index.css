@@ -61,6 +61,7 @@ h2 {
 }
 
 /* Width 1068px or larger - Desktop */
+
 @media only screen and (min-width: 1068px) {
     .container-photo {
         padding: 0px;
@@ -81,16 +82,13 @@ h2 {
     .paragraphs>p {
         margin-bottom: 20px;
     }
-
     footer {
         height: 30px;
     }
-
     footer a, footer p {
         font-size: 14px;
     }
-
-    footer > p > a > .footer-icon {
+    footer>p>a>.footer-icon {
         font-size: 16px;
     }
 }

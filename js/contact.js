@@ -1,6 +1,12 @@
 let sendsubjectButton = document.querySelector(".send-email-button");
 sendsubjectButton.addEventListener("click", ButtonClick);
 
+
+/**
+ * Function runs when submit button is clicked
+ * @param {event} event - event object
+ *
+ */
 function ButtonClick(event) {
 
     // Validate Data
@@ -83,10 +89,22 @@ function ButtonClick(event) {
     }
 }
 
+
+/**
+ * Function determines if the user input is empty
+ * @param {event} text - input text
+ * @return {bool} returns true if the string is empty
+ */
 function IsEmpty(text) {
     return (text == "" || text == " " || text == null || text == undefined);
 }
 
+
+/**
+ * Function determines if user input is is clean (has battlestar galactica swear words)
+ * @param {event} text - input text
+ * @return {bool} returns true if the string is clean
+ */
 function IsClean(text) {
     let word = text.toLowerCase();
 

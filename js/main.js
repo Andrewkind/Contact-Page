@@ -19,6 +19,9 @@ if (window.innerHeight <= 550) {
 
 }
 
+/**
+ *  Hamburger menu has been pressed.
+ */
 function HamburgerPressed() {
 
     if (!hamburberCheckbox.checked) {
