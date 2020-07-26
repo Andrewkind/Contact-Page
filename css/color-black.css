@@ -30,18 +30,13 @@ https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
   }
 
 
-
-.container {
-    background-color: var(--white);
-    border-bottom-color: black;
-}
-
 nav a {
     color: var(--black);
 }
 
 
 hr {
-    background-image: linear-gradient(to right,var(--white),var(--red), var(--white));
+    background-color: #f60;
+   /* background-image: linear-gradient(to right,var(--white),var(--techorange), var(--white)); */
 
 }

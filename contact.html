@@ -2,9 +2,10 @@
 
 <head>
     <!-- Add Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;515&family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;515&family=PT+Serif&display=swap"
+        rel="stylesheet">
 
-        <!-- Add Font Awesome -->
+    <!-- Add Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -31,7 +32,7 @@
 
 <body>
     <!-- Main Top Container -->
-    <div class="container container-nav">
+    <div class="container-nav">
 
         <!-- Top Nav-->
         <nav class="nav">
@@ -42,9 +43,9 @@
                 <img class="hamburger" src="media/menu.png" alt="">
             </label>
 
-       <!--Left Menu of Nav-->
-            <div class="left-menu menu">
-                
+            <!--Left Menu of Nav-->
+            <div class="left-menu">
+
                 <a>R&#201;sum&#201;</a>
                 <a>Portfolio</a>
                 <a>Contact</a>
@@ -56,19 +57,38 @@
             </a>
 
             <!--Right Menu of Nav-->
-            <div class="right-menu menu">
-                <span class="tooltiptext" id="tooltip-bark">BARK!</span>
-                <img class="right-logo right" id="bear-right" src="media/logo-eye.png" alt=""> 
+            <div class="right-menu">
+                <img class="right-logo right" src="media/logo-eye.png" alt="Andrew Kind">
             </div>
         </nav>
     </div>
 
-        <!-- Contact Form -->
-        <div>
+    <!-- Contact Form -->
+    <div class="container-contact">
 
-<h1>hello world</h1>
-
-        </div>
+        <h1>CONTACT FORM</h1>
+        <hr>
+        <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+            <div>
+                <label for="name">Name:
+                    <input type="text" name="name" id="name" />
+                </label>
+            </div>
+            <div>
+                <label for="email">Email:
+                    <input type="text" name="email" id="email" />
+                </label>
+            </div>
+            <div>
+                <label>Comments:</label>
+                <br />
+                <textarea name="comments" rows="12" cols="35">Send your comments to us.</textarea>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Send" />
+            </div>
+        </form>
+    </div>
 
 </body>
 
