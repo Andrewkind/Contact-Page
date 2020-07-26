@@ -11,7 +11,7 @@ hamburger.addEventListener("click", hamburgerPressed);
 
 console.log(hamburberCheckbox.checked);
 
-var paddingAmount = "410px"
+var paddingAmount = "390px"
 
 function hamburgerPressed() {
 
@@ -19,6 +19,9 @@ function hamburgerPressed() {
         navContainer.style.transition = "0.5s";
         navContainer.style.paddingBottom = paddingAmount;
         navTop.style.border = "0px";
+
+        //rotate hamburger icon
+        hamburger.style.transform = "rotate(90deg)";
 
         // After one second, remove extra padding
         setTimeout(function () {
@@ -51,6 +54,10 @@ function hamburgerPressed() {
         hamburberCheckbox.checked = false;
         navContainer.style.transition = "0s";
         navContainer.style.paddingBottom = paddingAmount;
+
+        //rotate icon back
+        hamburger.style.transform = "rotate(0deg)";
+
 
         // After one second, remove extra padding
         setTimeout(function () {
