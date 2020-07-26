@@ -2,9 +2,9 @@
 
 var hamburberCheckbox = document.getElementById("nav-toggle");
 var hamburger = document.querySelector(".hamburger");
-var navContainer = document.querySelector(".container-top");
+var navContainer = document.querySelector(".container-nav");
 var leftMenu = document.querySelector(".left-menu");
-var navTop = document.querySelector(".nav-top");
+var navTop = document.querySelector(".nav");
 
 
 hamburger.addEventListener("click", hamburgerPressed);

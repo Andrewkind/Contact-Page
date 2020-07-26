@@ -31,12 +31,6 @@ https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
 
 
 
-
-
-form {
-    color: var(--red);
-}
-
 .container {
     background-color: var(--white);
     border-bottom-color: black;
@@ -46,66 +40,8 @@ nav a {
     color: var(--black);
 }
 
-nav label {
-    color: var(--black);
-}
-
-.tasks {
-    border-color: var(--black);
-}
-
-.button1 {
-    background-color: var(--offwhite);
-    color: var(--black);
-    border-color: var(--red);
-}
-
-.button1:hover {
-    background-color: var(--orange);
-}
-
-input[type=text] {
-    border-color: var(--red);
-}
-
-.label, h1, label {
-    color: var(--black);
-}
-
-.checkmark {
-    background-color: var(--orange);
-}
-
-/* On mouse-over, add a grey background color */
-
-.container:hover input~.checkmark {
-    background-color: var(--black);
-}
-
-/* When the checkbox is checked, add a blue background */
-
-.container input:checked~.checkmark {
-    background-color: var(--black);
-}
-
-/* Style the checkmark/indicator */
-
-.container .checkmark:after {
-    border-color: var(--offwhite);
-}
 
 hr {
     background-image: linear-gradient(to right,var(--white),var(--red), var(--white));
-
-}
-
-/* 1025 pixel screen or less do this: */
-
-@media only screen and (max-width: 1025px) {
-    body {
-        background-color: var(--white);
-    }
-
-
 
 }

@@ -19,11 +19,11 @@ Uses tooltips style: tooltip.css
     max-width: 40px;
 }
 
-.container-top {
+.container-nav {
     border-bottom: 8px solid;
 }
 
-.nav-top {
+.nav {
     border-bottom: 0px solid #f60;
     padding: 20px;
 }
