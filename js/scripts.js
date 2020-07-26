@@ -72,3 +72,27 @@ function hamburgerPressed() {
 
 
 }
+
+//animateTitle();
+
+function animateTitle() {
+
+    var i = 0;
+
+    setInterval(() => {
+        if (i % 2 == 0) {
+            document.title = "o<";
+
+        }
+        else {
+            document.title = "O<";
+
+        }
+        i++;
+
+    }, 100);
+
+
+
+
+}
