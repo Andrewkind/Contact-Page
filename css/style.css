@@ -92,6 +92,7 @@ p {
 
 .container-contact {
     padding-top: 100px;
+    margin-bottom: 60px;
     display: grid;
     grid-template-columns: auto;
     justify-items: center;
@@ -388,7 +389,3 @@ footer > p > a > i {
     padding-right: 15px;
 }
 
-.p-footer {
-    font-size: 50px;
-    font-weight: bold;
-}
