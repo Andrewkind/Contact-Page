@@ -11,7 +11,11 @@
 
 
 .tanuki {
-    width: 60%;
+    width: 30%;
+    border-radius: 50%;
+    border: 8px solid black;
+    box-shadow: 2px 4px black;
+
 }
 
 .container-tanuki {
@@ -19,4 +23,11 @@
     justify-items: center;
     margin: 25px;
     padding: 25px;
+    align-content: center;
 }
+
+
+.full-height {
+    height: 100%;
+    background: aliceblue;
+  }

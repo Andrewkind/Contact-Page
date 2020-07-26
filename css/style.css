@@ -28,9 +28,12 @@ footer {
     display: grid;
     justify-content: space-between;
     grid-template-columns: auto auto;
+    justify-items: center;
     padding: 15px;
     font-family: 'Fire Coda', sans-serif;
     text-transform: none;
+    align-items: center;
+    align-content: center;
 }
 
 footer a, footer p {
@@ -111,6 +114,12 @@ h2 {
 h3 {
     font-family: 'Fire Coda', sans-serif;
     font-size: 40px;
+    max-width: 2000px;
+}
+
+h4 {
+    font-family: 'Fire Coda', sans-serif;
+    font-size: 34px;
     max-width: 2000px;
 }
 
@@ -370,3 +379,13 @@ hr {
     }
 }
 
+
+footer > p > a > i {
+    font-size: 90px;
+    padding-right: 15px;
+}
+
+.p-footer {
+    font-size: 50px;
+    font-weight: bold;
+}

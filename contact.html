@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/style.css">
 
         <!-- Add contact style sheet -->
-        <link rel="stylesheet" href="css/contact.cs">
+        <link rel="stylesheet" href="css/contact.css">
 
     <!-- Add Color Theme style sheet - swap color-black.css to color.css for color test  -->
     <link rel="stylesheet" href="css/color-black.css">
@@ -92,38 +92,38 @@
 
         </h2>
 
-        <form action="" id="form" method="get" enctype="text/plain">
+        <form action="mailto:someone@some-email.com" id="form" method="get" enctype="text/plain">
 
-
-            <div>
-                <label for="name">Your Name
-                    <input type="text" name="name" id="name" />
-
-                </label>
-            </div>
-            <label class="alert alert-name hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-
-                <span class="alert-name-text"> Please fill in the box. </span>
-            </label>
 
             <div>
                 <label for="email">Your Email
                     <input type="text" name="email" id="email" />
+
+                </label>
+            </div>
+            <label class="alert alert-email hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+
+                <span class="alert-email-text"> Please fill in the box. </span>
+            </label>
+
+            <div>
+                <label for="subject">Subject
+                    <input type="text" name="subject" id="subject" />
                 </label>
             </div>
 
-            <label class="alert alert-email hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                <span class="alert-email-text">   Please fill in the box. </span>
+            <label class="alert alert-subject hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                <span class="alert-subject-text">   Please fill in the box. </span>
             </label>
-            <div class="div-message">
-                <label>Message</label>
-                <textarea name="message" rows="12" cols="32" placeholder="  Write your message here"></textarea>
+            <div class="div-body">
+                <label>body</label>
+                <textarea name="body" rows="12" cols="32" placeholder="  Write your body here"></textarea>
 
 
             </div>
 
-            <label class="alert alert-message hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                <span class="alert-message-text">    Please fill in the box. </span>
+            <label class="alert alert-body hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                <span class="alert-body-text">    Please fill in the box. </span>
             </label>
 
             <div>
