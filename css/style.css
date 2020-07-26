@@ -46,8 +46,8 @@ a {
     font-family: 'Fire Coda', sans-serif;
 }
 
-
 /* Should be in its own css file contact.css */
+
 .container-contact {
     padding-top: 100px;
     padding-bottom: 600px;
@@ -59,13 +59,19 @@ a {
 h1 {
     font-family: 'Fire Coda', sans-serif;
     font-size: 60px;
-    max-width: 2000px; /* stop h1 from going on multi lines */
-    display: inlineock;
+    max-width: 2000px;
+    /* stop h1 from going on multi lines */
+}
 
+h2 {
+    font-family: 'Fire Coda', sans-serif;
+    font-size: 50px;
+    max-width: 2000px;
+    /* stop h1 from going on multi lines */
 }
 
 .last-a {
-         padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 a:hover {
@@ -89,13 +95,12 @@ a:hover {
 
 .left-menu {
     display: none;
-    max-width: 100px; /* Stop overflow of text in left menu a items */
-    
+    max-width: 100px;
+    /* Stop overflow of text in left menu a items */
     grid-column: 1;
     align-self: center;
     padding-left: 30px;
 }
-
 
 .right-logo {
     max-width: 100px;
@@ -122,12 +127,8 @@ a:hover {
     grid-row: 2;
 }
 
-
-
-
-
 hr {
-    width: 40%;
+    width: 52%;
     height: 12px;
     margin-bottom: 60px;
 }
@@ -137,38 +138,37 @@ form {
     border: 2px solid black;
     border-radius: 25px;
     padding: 20px;
-    width: 70%;
+    width: 80%;
     justify-items: center;
     font-family: 'Fire Coda', sans-serif;
-
 }
 
 form label {
     font-size: 40px;
     font-family: 'Fire Coda', sans-serif;
-
 }
 
 form textarea {
     font-size: 30px;
     font-family: 'Fire Coda', sans-serif;
-    padding-bottom: 20px;
-
+    padding: 12px 20px;
     width: 100%;
     border: 1px solid black;
+    border-radius: 10px;
     margin-bottom: 8px;
-
-
+    margin-top: 5px;
 }
 
 form input {
-    width: 100%; /* force input onto its own line */
+    width: 100%;
+    /* force input onto its own line */
     height: 120px;
     padding: 12px 20px;
     border: 1px solid;
     border-radius: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
+    margin-top: 5px;
     font-size: 40px;
 }
 
@@ -183,7 +183,6 @@ form input {
     padding: 15px;
     width: 90%;
     text-align: center;
-
     display: none;
 }
 
@@ -193,14 +192,39 @@ input[type="submit"] {
     border-radius: 20px;
     font-size: 50px;
     margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+form {
+    width: 60%;
+}
+
+.container-contact {
+    padding-top: 20px;
+}
+
+form label {
+    font-size: 16px;
+}
+
+form input {
+    font-size: 16px;
+    width: 100%;
+    height: 16px;
+}
 
 /* Width 725 or larger (up to 1025) - Tablet */
 
-@media only screen and (min-width: 725px) {
-
-}
+@media only screen and (min-width: 725px) {}
 
 /* Width 1025 or larger - Desktop */
 
@@ -230,6 +254,35 @@ input[type="submit"] {
         letter-spacing: 11.5px;
         font-size: 30px;
         padding: 0;
+    }
+    form textarea {
+        font-size: 14px;
+        padding: 12px 20px;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        margin-top: 5px;
+    }
+    input[type="text"] {
+        margin-bottom: 20px;
+    }
+    input[type="submit"] {
+        height: initial;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    hr {
+        width: 18%;
+        height: 4px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .alert {
+        width: 70%;
     }
 }
 
