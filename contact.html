@@ -26,8 +26,8 @@
     <!-- Add Main style sheet -->
     <link rel="stylesheet" href="css/style.css">
 
-        <!-- Add contact style sheet -->
-        <link rel="stylesheet" href="css/contact.css">
+    <!-- Add contact style sheet -->
+    <link rel="stylesheet" href="css/contact.css">
 
     <!-- Add Color Theme style sheet - swap color-black.css to color.css for color test  -->
     <link rel="stylesheet" href="css/color-black.css">
@@ -94,45 +94,64 @@
 
         <form action="mailto:someone@some-email.com" id="form" method="get" enctype="text/plain">
 
+            <ul>
+                <li>
+                    <label class="alert alert-email hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <span class="alert-email-text">  </span>
+                    </label>
+                    
+                </li>
+
+                <li>
+                    <label class="alert alert-subject hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <span class="alert-subject-text">  </span>
+                    </label>
+                </li>
+
+                <li>
+                       
+
+            <label class="alert alert-body hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                <span class="alert-body-text">  </span>
+            </label>
+
+
+
+
+                </li>
+
+            </ul>
+ 
+
+     
 
             <div>
-                <label for="email">Your Email
+                <label for="email">Your Name
                     <input type="text" name="email" id="email" />
 
                 </label>
             </div>
-            <label class="alert alert-email hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-
-                <span class="alert-email-text"> Please fill in the box. </span>
-            </label>
-
+      
             <div>
                 <label for="subject">Subject
                     <input type="text" name="subject" id="subject" />
                 </label>
             </div>
 
-            <label class="alert alert-subject hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                <span class="alert-subject-text">   Please fill in the box. </span>
-            </label>
+
             <div class="div-body">
-                <label>body</label>
-                <textarea name="body" rows="12" cols="32" placeholder="  Write your body here"></textarea>
+                <label>Message</label>
+                <textarea name="body" rows="12" cols="32" placeholder="  Write your message here"></textarea>
 
 
             </div>
 
-            <label class="alert alert-body hide"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                <span class="alert-body-text">    Please fill in the box. </span>
-            </label>
-
-            <div>
-                <input type="submit" class="send-email-button" name="submit" value="send" />
+      
+            <div class="submit-div">
+                <input type="submit" class="send-email-button" name="submit" value="SEND" />
 
             </div>
-            <!--  <label class="alert alert-all"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                Please fix errors.
-            </label>-->
+
         </form>
     </div>
 

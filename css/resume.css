@@ -113,6 +113,7 @@ input[type="button"].active {
 
   article {
       border: 3px solid black;
+      box-shadow: 2px 4px black;
       border-radius: 15px;
       margin: 30px;
       margin-bottom: 60px;

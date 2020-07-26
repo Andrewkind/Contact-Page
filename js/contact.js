@@ -55,14 +55,14 @@ function buttonClick(event) {
     if (isEmpty(email)) {
         // email is empty
         validData = false;
-        emailAlertText.innerHTML = "Please fill in the box";
+        emailAlertText.innerHTML = "Please fill in the Email box.";
         emailAlert.classList.remove("hide");
     }
 
 
     if (!isClean(email)) {
         validData = false;
-        emailAlertText.innerHTML = "Vulgar!";
+        emailAlertText.innerHTML = "Vulgar language detected.";
         emailAlert.classList.remove("hide");
     }
 
@@ -71,12 +71,12 @@ function buttonClick(event) {
     if (isEmpty(subject)) {
         // email is empty
         validData = false;
-        subjectAlertText.innerHTML = "Please fill in the box";
+        subjectAlertText.innerHTML = "Please fill in the Subject box.";
         subjectAlert.classList.remove("hide");
     }
     if (!isClean(subject)) {
         validData = false;
-        subjectAlertText.innerHTML = "Vulgar!";
+        subjectAlertText.innerHTML = "Vulgar language detected.";
         subjectAlert.classList.remove("hide");
     }
 
@@ -84,13 +84,13 @@ function buttonClick(event) {
     if (isEmpty(body)) {
         // email is empty
         validData = false;
-        bodyAlertText.innerHTML = "Please fill in the box";
+        bodyAlertText.innerHTML = "Please fill in the Message box.";
 
         bodyAlert.classList.remove("hide");
     }
     if (!isClean(body)) {
         validData = false;
-        bodyAlertText.innerHTML = "Vulgar!";
+        bodyAlertText.innerHTML = "Vulgar language detected.";
         bodyAlert.classList.remove("hide");
     }
 
