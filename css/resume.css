@@ -1,24 +1,42 @@
 section {
-
-padding: 25px;
-margin: 25px;
-
-
+    padding: 25px;
+    margin: 25px;
 }
 
 p {
-    
-padding: 5px;
-margin: 5px;
-    font-size: 24px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 20px;
+    font-size: 28px;
+
 }
 
-section > p {
+section>p {
     font-family: 'Fire Coda', sans-serif;
 }
 
 section ul li {
     font-family: 'Fire Coda', sans-serif;
-
     list-style: initial;
+}
+
+ul {
+    margin: 10px;
+}
+
+li {
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 24px;
+    
+}
+
+time {
+    font-size: 24px;
+    font-family: 'Fire Coda', sans-serif;
+
+}
+
+hr {
+    width: 28%;
 }

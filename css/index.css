@@ -14,3 +14,13 @@ footer {
 }
 
 
+.tanuki {
+    width: 90%;
+}
+
+.container-tanuki {
+    display: grid;
+    justify-items: center;
+    margin: 25px;
+    padding: 25px;
+}

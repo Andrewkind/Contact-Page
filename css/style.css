@@ -125,14 +125,14 @@ h1 {
 
 h2 {
     font-family: 'Fire Coda', sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     max-width: 2000px;
     /* stop h1 from going on multi lines */
 }
 
 h3 {
     font-family: 'Fire Coda', sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     max-width: 2000px;
 }
 
@@ -227,15 +227,16 @@ form label {
 form textarea {
     font-size: 30px;
     font-family: 'Fire Coda', sans-serif;
-    width: 100%;
+    width: 95%;
     border: 2px solid black;
     border-radius: 10px;
     margin-bottom: 8px;
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 15px;
-    resize: none;
     box-shadow: 2px 4px black;
+    margin-left: 4px; /* texta area border issue */
+
 
 }
 
@@ -243,7 +244,6 @@ form input {
     width: 100%;
     /* force input onto its own line */
     height: 120px;
-    padding: 12px 20px;
     border: 2px solid;
     border-radius: 10px;
     box-sizing: border-box;
@@ -294,6 +294,12 @@ input[type="submit"] {
       box-shadow: 2px 4px black;
 
 }
+
+form > div {
+    width: 100%;
+}
+
+
 
 /* Width 725 or larger (up to 1025) - Tablet */
 
