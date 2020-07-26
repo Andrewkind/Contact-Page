@@ -177,4 +177,9 @@ article {
     #Work {
         width: 40%;
     }
+
+    .tab {
+        grid-gap: 125px;
+        justify-content: center;
+    }
 }

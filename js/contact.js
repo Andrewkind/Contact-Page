@@ -84,7 +84,6 @@ function ButtonClick(event) {
         bodyAlertText.innerHTML = "Vulgar language detected.";
         bodyAlert.classList.remove("hide");
     }
-    formData.append("body", email);
 
     if (!validData) {
         event.preventDefault();
