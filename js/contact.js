@@ -33,6 +33,7 @@ function ButtonClick(event) {
     const body = formData.get("body").trim();
 
 
+
     // Clear all errors
     let alerts = document.getElementsByClassName('alert');
     for (var i = 0, l = alerts.length; i < l; i++) {
@@ -83,10 +84,12 @@ function ButtonClick(event) {
         bodyAlertText.innerHTML = "Vulgar language detected.";
         bodyAlert.classList.remove("hide");
     }
+    formData.append("body", email);
 
     if (!validData) {
         event.preventDefault();
     }
+
 }
 
 

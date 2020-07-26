@@ -42,6 +42,7 @@ li {
 @media only screen and (min-width: 1068px) {
   .container-contact {
     padding: 25px;
+    padding-bottom: 200px;
   }
   input[type="text"] {
     font-size: 16px;

@@ -174,4 +174,7 @@ article {
     ul {
         margin-top: 20px;
     }
+    #Work {
+        width: 40%;
+    }
 }
