@@ -25,12 +25,10 @@ h2 {
     hr {
         width: 17%;
     }
-    
     .container-intro {
         padding-top: 25px;
         padding-bottom: 0px;
     }
-
     h2 {
         font-size: 22px;
         padding-top: 25px;
@@ -43,5 +41,8 @@ h2 {
     .photo {
         margin-top: 25px;
         width: 50%;
+    }
+    .container-tanuki {
+        margin-bottom: 58px;
     }
 }

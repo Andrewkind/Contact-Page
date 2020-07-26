@@ -44,6 +44,7 @@ li {
     padding: 25px;
     padding-bottom: 200px;
   }
+  
   input[type="text"] {
     font-size: 16px;
     width: 100%;
@@ -60,7 +61,7 @@ li {
     font-size: 20px;
   }
   .submit-div {
-    width: 30%;
+    width: 10%;
   }
   footer {
     height: 30px;
