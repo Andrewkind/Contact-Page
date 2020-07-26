@@ -128,3 +128,5 @@ function isValid(text) {
 
     return false;
 }
+
+//alert(window.innerWidth);

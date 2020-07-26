@@ -1,0 +1,16 @@
+/* Index.html specific css */
+
+.div-youtube {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 10%;
+    padding-top: 40px;
+}
+
+footer {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+

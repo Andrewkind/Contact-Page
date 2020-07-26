@@ -2,11 +2,19 @@
 <html lang="en">
 
 <head>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <!-- assign viewport-fit as cover to fix iPhoneX bug
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    -->
+
     <!-- Add Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;515&family=PT+Serif&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Add Font Awesome -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -28,7 +36,7 @@
     <script src="js/scripts.js" defer></script>
 
     <!-- Decorate Page -->
-    <title>Andrew Kind</title>
+    <title>Contact - Andrew Kind</title>
     <link rel="icon" href="media/logo.png">
 
 </head>
@@ -43,15 +51,15 @@
             <!-- Hamburger Shows up on mobile-->
             <input type="checkbox" id="nav-toggle">
             <label for="nav-toggle2" class="burger-menu">
-                <img class="hamburger" src="media/menu.png" alt="">
+                <img class="hamburger" src="media/menu-cut.png" alt="">
             </label>
 
             <!--Left Menu of Nav-->
             <div class="left-menu">
 
-                <a href="resume.html">R&#201;sum&#201;</a>
-                <a>Portfolio</a>
-                <a class="last-a">Contact</a>
+                <a href="resume.html">R&#201;SUM&#201;</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+                <a href="contact.html" class="last-a">CONTACT</a>
             </div>
 
             <!--Center Menu of Nav-->
@@ -67,28 +75,26 @@
     </div>
 
 
-    <!--#include file="index.html" -->
-
     <!-- Contact Form -->
     <div class="container-contact">
 
         <h1>CONTACT FORM</h1>
         <hr>
 
-        <h2>Send me some love <i class="icon-heart"></i>  
+        <h2>Send me some love <i class="icon-heart"></i>
 
         </h2>
 
-        <form action="mailto:" id = "form" method="get" enctype="text/plain">
+        <form action="mailto:" id="form" method="get" enctype="text/plain">
 
 
             <div>
-                <label for="name">Your Name 
+                <label for="name">Your Name
                     <input type="text" name="name" id="name" />
-                    
+
                 </label>
             </div>
-                <label class="alert alert-name"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            <label class="alert alert-name"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
 
                 Please fill in the box.
             </label>
@@ -98,29 +104,36 @@
                     <input type="text" name="email" id="email" />
                 </label>
             </div>
-         
+
             <label class="alert alert-email"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                 Please fill in the box.
             </label>
             <div>
                 <label>Message</label>
-                
+
                 <textarea name="message" rows="12" cols="32" placeholder="  Write your message here"></textarea>
-            </div>4
-      
+            </div>
+
             <label class="alert alert-message"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                 Please fill in the box.
             </label>
 
             <div>
                 <input type="submit" class="send-email-button" name="submit" value="Send Email" />
-             
+
             </div>
-          <!--  <label class="alert alert-all"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            <!--  <label class="alert alert-all"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                 Please fix errors.
             </label>-->
         </form>
     </div>
+
+    <!-- footer html
+        source: https://www.w3schools.com/tags/tag_footer.asp -->
+    <footer>
+        <p>© 2018 Andrew Kind</p>
+        <p><a href="mailto:hege@example.com">be kind rewind</a></p>
+    </footer>
 </body>
 
 </html>
