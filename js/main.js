@@ -72,6 +72,6 @@ function HamburgerPressed() {
 
             }, 500);
 
-        }, 1)
+        }, 50)
     }
 }

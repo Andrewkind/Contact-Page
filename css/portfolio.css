@@ -9,7 +9,7 @@ h3 {
 }
 
 hr {
-    width: 52%;
+    width: 60%;
 }
 
 .container-intro {
@@ -23,7 +23,7 @@ h2 {
 
 @media only screen and (min-width: 1068px) {
     hr {
-        width: 17%;
+        width: 11%;
     }
     .container-intro {
         padding-top: 25px;
