@@ -11,7 +11,7 @@ hamburger.addEventListener("click", hamburgerPressed);
 
 console.log(hamburberCheckbox.checked);
 
-var paddingAmount = "210px"
+var paddingAmount = "270px"
 
 function hamburgerPressed() {
 
