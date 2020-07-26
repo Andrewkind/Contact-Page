@@ -5,6 +5,8 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
 
+
+
     <!-- Add Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;515&family=PT+Serif&display=swap"
         rel="stylesheet">
@@ -14,7 +16,6 @@
     <!-- Add Font Awesome -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-
     <!-- Add Reset Sheet -->
     <link rel="stylesheet" href="css/reset.css">
 
@@ -22,25 +23,25 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <!-- Add Resume style sheet -->
+    <!-- Add index.html style sheet -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Add index.html style sheet -->
     <link rel="stylesheet" href="css/portfolio.css">
 
     <!-- Add Color Theme style sheet - swap color-black.css to color.css for color test  -->
     <link rel="stylesheet" href="css/color-black.css">
 
-
-
-    <!-- Add resume JavaScript file -->
-    <script src="js/portfolio.js" defer></script>
+    <!-- Add index JavaScript file -->
+    <script type="text/javascript" src="js/index.js" defer></script>
 
     <!-- Add Main JavaScript file -->
     <script type="text/javascript" src="js/main.js" defer></script>
 
 
     <!-- Decorate Page -->
-    <title>Resume - Andrew Kind</title>
+    <title>Index - Andrew Kind</title>
     <link rel="icon" href="media/logo.png">
-
 
 </head>
 
@@ -54,7 +55,7 @@
 
             <!-- Hamburger Shows up on mobile-->
             <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle2" class="burger-menu">
+            <label class="burger-menu">
                 <img class="hamburger" src="media/menu-cut.jpg" alt="">
             </label>
 
@@ -73,7 +74,7 @@
 
             <!--Right Menu of Nav-->
             <div class="right-menu">
-                <img class="right-logo right" src="media/logo-eye.png" alt="Andrew Kind">
+                <a href="index.html"> <img class="right-logo right" src="media/logo-eye.png" alt="Andrew Kind"></a>
             </div>
         </nav>
     </header>
@@ -84,94 +85,54 @@
 
 
 
-    <!-- Container for the image gallery -->
-    <div class="container-gallery">
+    <div class="container-tanuki">
 
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img src="media/gallery/img_woods_wide.jpg" style="width:100%">
+
+        <div class="container-intro">
+            <h1>    Coming Soon </h1>
+
+            <img class="photo" src="media/gallery/tanuki.jpg" alt="">
+
+
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="media/gallery/img_5terre_wide.jpg" style="width:100%">
+
+        <div class="container-intro container-last">
+
+
+
+            <article>
+
+             
+
+
+            </article>
+
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="media/gallery/img_mountains_wide.jpg" style="width:100%">
-        </div>
 
-        <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="media/gallery/img_lights_wide.jpg" style="width:100%">
-        </div>
 
-        <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="media/gallery/img_nature_wide.jpg" style="width:100%">
-        </div>
 
-        <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-            <img src="media/gallery/tanuki.jpg" style="width:100%">
-        </div>
 
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <!-- Image text -->
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-
-        <!-- Thumbnail images -->
-        <div class="row">
-            <div class="column">
-                <img class="demo cursor" src="media/gallery/img_woods.jpg" style="width:100%" onclick="currentSlide(1)"
-                    alt="The Woods">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="media/gallery/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)"
-                    alt="Cinque Terre">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="media/gallery/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)"
-                    alt="Mountains and fjords">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="media/gallery/img_lights.jpg" style="width:100%" onclick="currentSlide(4)"
-                    alt="Northern Lights">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="media/gallery/img_nature.jpg" style="width:100%" onclick="currentSlide(5)"
-                    alt="Nature and sunrise">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="media/gallery/tanuki.jpg" style="width:100%" onclick="currentSlide(6)"
-                    alt="Snowy Mountains">
-            </div>
-        </div>
     </div>
 
+
+
+
+
+    <!-- footer html
+            source: https://www.w3schools.com/tags/tag_footer.asp -->
+    <footer>
+        <p>© 2020 Andrew Kind</p>
+        <p>
+
+            <a href="https://github.com/Andrewkind"><i class="icon-github-alt"></i>
+            </a>
+            <a href="http://linkedin.com/in/andrew-kind-3a9a998a"> <i class="icon-linkedin-sign"></i>
+            </a>
+        </p>
+    </footer>
 </body>
-
-
-
-<!-- footer html
-        source: https://www.w3schools.com/tags/tag_footer.asp -->
-<footer>
-    <p>© 2020 Andrew Kind</p>
-    <p>
-
-        <a href="https://github.com/Andrewkind"><i class="icon-github-alt"></i>
-        </a>
-        <a href="http://linkedin.com/in/andrew-kind-3a9a998a"> <i class="icon-linkedin-sign"></i>
-        </a>
-    </p>
-</footer>
-
 
 </html>

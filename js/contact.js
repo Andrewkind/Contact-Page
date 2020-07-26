@@ -55,7 +55,7 @@ function buttonClick(event) {
     if (isEmpty(email)) {
         // email is empty
         validData = false;
-        emailAlertText.innerHTML = "Please fill in the Email box.";
+        emailAlertText.innerHTML = "Please fill in the Name box.";
         emailAlert.classList.remove("hide");
     }
 

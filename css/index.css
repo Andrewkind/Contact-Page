@@ -10,13 +10,14 @@
 
 
 
-.tanuki {
-    width: 30%;
-    border-radius: 50%;
+.photo {
+    border-radius: 5%;
     border: 8px solid black;
     box-shadow: 2px 4px black;
+    width: 200%;
 
 }
+
 
 .container-tanuki {
     display: grid;
@@ -24,10 +25,33 @@
     margin: 25px;
     padding: 25px;
     align-content: center;
+    justify-content: center;
+
 }
 
+.container-intro {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 120px;
+}
 
-.full-height {
-    height: 100%;
-    background: aliceblue;
+.container-last {
+    margin-bottom: 120px;
+
+}
+
+ article > p {
+      margin-bottom: 100px;
+  }
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+  p > a {
+    font-weight: bold;
+    line-height: 2.5;
+    letter-spacing: 2.5px;
   }

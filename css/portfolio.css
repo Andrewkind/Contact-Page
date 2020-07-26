@@ -88,3 +88,7 @@
   .demo:hover {
     opacity: 1;
   }
+
+  .photo {
+      width: 50%;
+  }

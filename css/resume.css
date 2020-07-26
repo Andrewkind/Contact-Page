@@ -123,3 +123,7 @@ input[type="button"].active {
   .icon-lemon {
     background-color: yellow;
   }
+
+  i {
+    color: black;
+  }
