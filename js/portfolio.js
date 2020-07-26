@@ -1,3 +1,8 @@
+/*
+html gallery 
+source: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+*/
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
