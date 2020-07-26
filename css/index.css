@@ -6,24 +6,19 @@
     padding-top: 40px;
 }
 
-
-
 .photo {
     border-radius: 5%;
     border: 8px solid black;
     width: 100%;
-
 }
 
-
-.container-tanuki {
+.container-photo {
     display: grid;
     justify-items: center;
     margin: 25px;
     padding: 25px;
     align-content: center;
     justify-content: center;
-
 }
 
 .container-intro {
@@ -35,29 +30,67 @@
 
 .container-last {
     margin-bottom: 30px;
-
 }
 
- .paragraphs > p {
-      margin-bottom: 100px;
-      text-align: center;
-  }
+.paragraphs>p {
+    margin-bottom: 100px;
+    text-align: center;
+}
 
-  a {
-      text-decoration: none;
-      color: black;
-  }
+a {
+    text-decoration: none;
+    color: black;
+}
 
-  .paragraphs > p > a {
+.paragraphs>p>a {
     font-weight: bold;
     line-height: 2.5;
     letter-spacing: 2.5px;
-  }
+}
 
-  .last-p {
-      margin-bottom: 250px;
-  }
+.last-p {
+    margin-bottom: 250px;
+}
 
-  hr {
-      width: 100%;
-  }
+hr {
+    width: 100%;
+}
+
+h2 {
+    padding-top: 2px;
+}
+
+/* Width 1068px or larger - Desktop */
+@media only screen and (min-width: 1068px) {
+    .container-photo {
+        padding: 0px;
+    }
+    hr {
+        width: 45%;
+    }
+    .photo {
+        width: 50%;
+        border-width: 2px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .container-intro {
+        margin-bottom: 30px;
+    }
+    .paragraphs>p {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        height: 30px;
+    }
+
+    footer a, footer p {
+        font-size: 14px;
+    }
+
+    footer > p > a > .footer-icon {
+        font-size: 16px;
+    }
+}

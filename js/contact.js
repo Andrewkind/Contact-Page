@@ -12,6 +12,7 @@ function ButtonClick(event) {
     const bodyAlertText = document.querySelector(".alert-body-text");
     const emailAlertText = document.querySelector(".alert-email-text");
     const subjectAlertText = document.querySelector(".alert-subject-text");
+    const errorList = document.querySelector(".error-list");
 
 
     // Variable to hold our form data's validity. Sets to false if we find any errors.
@@ -30,6 +31,10 @@ function ButtonClick(event) {
     let alerts = document.getElementsByClassName('alert');
     for (var i = 0, l = alerts.length; i < l; i++) {
         alerts[i].classList.add("hide");
+
+        //hide list
+        errorList.style.display = "block";
+
     }
 
     // Check email Validity

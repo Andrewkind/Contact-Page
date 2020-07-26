@@ -15,9 +15,6 @@ function OpenTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
 
 let workTab = document.querySelector(".work-tab");
 let educationTab = document.querySelector(".education-tab");
@@ -34,3 +31,7 @@ educationTab.addEventListener("click", function () {
 otherTab.addEventListener("click", function () {
     OpenTab(event, 'Other')
 });
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

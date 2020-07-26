@@ -82,8 +82,9 @@ input[type="button"] {
     font-size: 40px;
     color: black;
     border-radius: 20px;
+    -webkit-appearance: none;
     background-color: white;
-    border: px solid #f60;
+    border: 2px solid #f60;
 }
 
 input[type="button"].active {
@@ -92,11 +93,10 @@ input[type="button"].active {
     color: white;
 }
 
-
 article {
-    border: 3px solid black;
-    box-shadow: 2px 4px black;
-    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 1px 1px black;
+    border-radius: 5px;
     margin: 30px;
     margin-bottom: 60px;
 }
@@ -107,6 +107,7 @@ article {
 
 .github-link {
     text-align: center;
+    font-weight: bold;
 }
 
 #Other {
@@ -116,4 +117,60 @@ article {
 .icon {
     color: black;
     text-decoration: none;
+}
+
+/* Width 1068px or larger - Desktop */
+
+@media only screen and (min-width: 1068px) {
+    footer {
+        height: 30px;
+    }
+    footer a, footer p {
+        font-size: 14px;
+    }
+    footer>p>a>.footer-icon {
+        font-size: 16px;
+    }
+    hr {
+        width: 11%;
+    }
+    .container-contact {
+        padding: 25px;
+    }
+    input[type="button"] {
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        border-width: 1px;
+    }
+    h2 {
+        font-size: 21px;
+        margin: 0px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 21px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    time {
+        font-size: 16px;
+    }
+    article>p {
+        font-size: 16px;
+    }
+    section {
+        padding-top: 0px;
+    }
+    li {
+        font-size: 16px;
+    }
+    input[type="button"].active {
+        border: 2px solid black;
+    }
+    ul {
+        margin-top: 20px;
+    }
 }
