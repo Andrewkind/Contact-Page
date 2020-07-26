@@ -32,8 +32,12 @@
     <!-- Add Tooltip style sheet -->
     <link rel="stylesheet" href="css/tooltip.css">
 
+    <!-- Add resume JavaScript file -->
+    <script src="js/resume.js" defer></script>
+
     <!-- Add Main JavaScript file -->
-    <script src="js/scripts.js" defer></script>
+    <script type="text/javascript" src="js/main.js" defer></script>
+
 
     <!-- Decorate Page -->
     <title>Resume - Andrew Kind</title>
@@ -51,7 +55,7 @@
             <!-- Hamburger Shows up on mobile-->
             <input type="checkbox" id="nav-toggle">
             <label for="nav-toggle2" class="burger-menu">
-                <img class="hamburger" src="media/menu-cut.png" alt="">
+                <img class="hamburger" src="media/menu-cut.jpg" alt="">
             </label>
 
             <!--Left Menu of Nav-->
@@ -74,16 +78,52 @@
         </nav>
     </header>
 
+
     <!-- Contact Form -->
     <div class="container-contact">
 
         <h1> R&#201;SUM&#201; </h1>
         <hr>
 
-        <h2> Work Experience <i class="icon-lemon" style="background-color: yellow;"></i> </h2>
 
 
-        <section>
+
+
+
+
+
+
+        <!--switch to event listeners-->
+        <div class="tab">
+         
+            <input class="tablinks" id="defaultOpen" type="button" value="Work" onclick="openTab(event, 'Work')">
+
+            <input class="tablinks" type="button" value="Education" onclick="openTab(event, 'Education')">
+
+            <input class="tablinks"type="button" value="Other" onclick="openTab(event, 'Other')">
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <section id="Work" class="tabcontent">
+
+
+            <h2> Work Experience <i class="icon-lemon" style="background-color: yellow;"></i>
+            </h2>
+
+
+
+
+
+
+            <article>
             <h3>WAV Inspection LTD.</h3>
             <time> Oct 2014-2020</time>
 
@@ -117,27 +157,42 @@
                     Provide IT solutions for storage solutions, file management, backups,and sharing (G Suite for
                     Business)
                 </li>
-
-
             </ul>
-        </section>
+        </article>
 
-        <section>
-            <h3>WAV Inspection LTD.</h3>
-            <time> Oct 2014-2020</time>
+            <article>
+            <h3>Boston Pizza Computer Services</h3>
+            <time> June 2010 - March 2014</time>
 
             <p>
-                I provide IT Support to WAV Inspection, a Non-Destructive Testing company. Our field technicians
-                performed
-                inspections to guarantee safety in many manufacturedparts including pressure vessels and pipelines.
-                Tasks
-                included:
+                While receiving my bachelor’s degree, I was a Supervisor for Boston Pizza’s call centre that provided
+                delivery and take-out service to the Northern Alberta region.
             </p>
-        </section>
+       
 
 
+            <ul>
+                <li>
+                    Monitored, assisted, and trainedour Call Centre Representatives.
+                </li>
+                <li>
+                    Handled customer relations and facilitated customer complaints, concerns and comments.
 
-        <section>
+                </li>
+                <li>
+                    Helped troubleshoot communication systems between the call centre and individual stores in order to
+                    maintain steady flow of orders in a timely manner.
+                </li>
+                <li>
+                    Create, manage, and assist users with our extensive reports built in Microsoft Word / Excel
+                </li>
+                <li>
+                    Held leadership role and provided a strong example for teamwork
+                </li>
+            </ul>
+        </article>
+
+    <article>
             <h3>WAV Inspection Ltd.</h3>
             <time> Oct 2014-2020</time>
 
@@ -148,9 +203,63 @@
                 Tasks
                 included:
             </p>
+
+        </article>
+
+
         </section>
 
+
+
+        <section id="Education" class="tabcontent">
+
+
+           
+            <h2>Education <i class="icon-lemon" style="background-color: yellow;"></i> </h2>
+
+            <h3>WAV Inspection Ltd.</h3>
+            <time> Oct 2014-2020</time>
+            <p>
+                I provide IT Support to WAV Inspection, a Non-Destructive Testing company. Our field technicians
+                performed
+                inspections to guarantee safety in many manufacturedparts including pressure vessels and pipelines.
+                Tasks
+                included:
+            </p>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
     </div>
+
+
+
+
+
+
+    <!-- footer html
+        source: https://www.w3schools.com/tags/tag_footer.asp -->
+    <footer>
+        <p>© 2020 Andrew Kind</p>
+        <p>
+
+            <a href="https://github.com/Andrewkind"><i class="icon-github-alt"></i>
+            </a>
+            <a href="http://linkedin.com/in/andrew-kind-3a9a998a"> <i class="icon-linkedin-sign"></i>
+            </a>
+        </p>
+    </footer>
+
+
+
 
 </body>
 

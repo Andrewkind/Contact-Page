@@ -1,3 +1,11 @@
+
+var txt = "<p>innerWidth: " + window.innerWidth + "</p>";
+txt += "<p>innerHeight: " + window.innerHeight + "</p>";
+txt += "<p>outerWidth: " + window.outerWidth + "</p>";
+txt += "<p>outerHeight: " + window.outerHeight + "</p>"; 
+//alert(txt);
+
+
 // Animate Hamburger
 
 var hamburberCheckbox = document.getElementById("nav-toggle");
@@ -9,9 +17,15 @@ var navTop = document.querySelector(".nav");
 
 hamburger.addEventListener("click", hamburgerPressed);
 
-console.log(hamburberCheckbox.checked);
-
 var paddingAmount = "390px"
+
+// special case  
+
+if (window.innerHeight <= 500) {
+    paddingAmount = "226px"
+ //   alert("window.innerHeight: " + window.innerHeight);
+//
+}
 
 function hamburgerPressed() {
 
@@ -26,7 +40,7 @@ function hamburgerPressed() {
         // After one second, remove extra padding
         setTimeout(function () {
             hamburberCheckbox.checked = true;
-                 navContainer.style.transition = "0s";
+            navContainer.style.transition = "0s";
             navContainer.style.paddingBottom = "0px";
             leftMenu.style.opacity = "0%";
             navTop.style.borderBottom = "0px solid #f60"
@@ -36,16 +50,8 @@ function hamburgerPressed() {
                 leftMenu.style.transition = "0.175s";
 
                 leftMenu.style.opacity = "100%";
-
-
-
             }, 100)
-
-
         }, 500)
-
-
-
     }
     else {
         // Remove border and place back after animation
@@ -72,61 +78,5 @@ function hamburgerPressed() {
             }, 500);
 
         }, 1)
-
     }
-
-
-
-
 }
-
-
-var sendEmailButton = document.querySelector(".send-email-button");
-sendEmailButton.addEventListener("click", buttonClick);
-
-function buttonClick(event) {
-    
-    var alerts = document.getElementsByClassName('alert');
-    console.log(alerts);
-    for(var i=0, l=alerts.length; i<l; i++){
-        alerts[i].style.display = "block";
-       }
-
-       // Validate Data
-
-       var form = document.getElementById("form")
-       console.log(form);
-
-       var formData = new FormData(form);
-       console.log(form);
-
-       var name = formData.get("name");
-       console.log(name);
-       
-       var email = formData.get("email");
-       console.log(email);
-
-       var message = formData.get("message");
-       console.log(message);
-
-       if (isValid(message) && isValid(email) && isValid(name)) {
-           console.log("good to go");
-
-           form.submit();
-           // Run form action via js
-
-       }
-       else {
-        event.preventDefault();
-
-       }
-}
-
-
-
-function isValid(text) {
-
-    return false;
-}
-
-//alert(window.innerWidth);
