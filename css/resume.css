@@ -136,6 +136,8 @@ article {
     }
     .container-contact {
         padding: 25px;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     input[type="button"] {
         width: 110px;
@@ -147,7 +149,6 @@ article {
     h2 {
         font-size: 21px;
         margin: 0px;
-        font-weight: bold;
     }
     h3 {
         font-size: 21px;
