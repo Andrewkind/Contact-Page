@@ -1,6 +1,8 @@
 # milestone-1-front-end-resume-w-contact-form-Andrewkind
 milestone-1-front-end-resume-w-contact-form-Andrewkind created by GitHub Classroom
 
+GitHub Page: https://andrewkind.github.io/Contact-Page
+
 Trello link: https://trello.com/b/q5HEWM0u/milestone-1
 
 Citations: 
